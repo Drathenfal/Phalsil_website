@@ -1,0 +1,50 @@
+//Mix ins
+
+//social media icons
+@mixin socialmedia-icons ($bimg,$bsize){
+    height:5vh;
+    width:10vw;
+    margin: 0px 5px;
+    background-color: black;
+    // border-radius: 50%;
+    background-image: $bimg;
+    background-repeat: no-repeat;
+    background-size: $bsize;
+    background-position: center;
+    // @media (min-width: 480px){
+    //     width: 65px;
+    // }
+}
+
+//media queries
+
+@mixin mq($break) {
+    @if $break == "xsmall" {
+        @media (min-width: $break-xsmall) and (max-width: $break-small) {
+            @content;
+    }
+}
+@else if $break == "small" {
+    @media (min-width: $break-small) {
+            @content;
+    }
+} 
+@else if $break == "medium" {
+    @media (min-width: $break-medium) {
+            @content;
+    }
+}
+@else if $break == "large" {
+    @media (min-width: $break-large) {
+            @content;
+    }
+}
+@else if $break == "xlarge" {
+    @media (min-width: $break-xlarge) {
+            @content;
+    }
+}
+@else {
+    @error "#{$break} isnt a valid media query size!!";
+    }
+}

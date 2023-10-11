@@ -1,0 +1,77 @@
+//generic
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: .4px;
+    
+    a:hover{
+        cursor: pointer;
+    }
+}
+
+
+// // .light-bg {
+// //     background-color: $light-color;
+// //     width: 100%;
+// // }
+
+// .container {
+//     margin-right: auto;
+//     margin-left: auto;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     @include mq(small){
+//         width: 460px;
+//     }
+//     @include mq(medium){
+//         width: 768px;
+//     }
+//     @include mq(large){
+//         width: 748px; 
+//     }
+//     @include mq(xlarge){
+//         width: 1000px;
+//     }
+//     @include mq(xxlarge){
+//         width: 1250px;
+//     }
+// }
+
+// .wrapper-main {
+//     @include mq(large){
+//         margin-left: 15rem;
+//     }
+//     @include mq(xlarge){
+//         margin-left: 15rem;
+// }
+// }
+
+// h2 {
+//     font-size: 2rem;
+//     font-weight: $font-weight--bold;
+//     text-align: center;
+//         padding: 25px 0;
+// }
+
+// body {
+//     margin: 0;
+//     background-color: $dark-color;
+//     color: #fff;
+//     font-family: 'Lato', sans-serif;
+//     font-weight: $font-weight--light;
+//     font-size: 1.2rem;
+//     letter-spacing: .4px;
+    
+//     a:hover{
+//         cursor: pointer;
+//     }
+// }
